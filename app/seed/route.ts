@@ -1,6 +1,7 @@
 
+/*
 import { db } from '@vercel/postgres';
-
+import { invoices, customers, revenue, users } from '../lib/placeholder-data';
 
 const client = await db.connect();
 
@@ -231,13 +232,14 @@ async function createAdmin() {
 }
 
 
-
+*/
 
 
 
 
 export async function GET() {
-
+  return Response.json({ message: 'low key' });
+  /*
   try {
     await client.sql`BEGIN`;
     await createUser();
@@ -254,12 +256,12 @@ export async function GET() {
     await createProjectStaff();
     await createRequest();
     await createWorkshop();
-    await createWorkshopMember();
+    await createWorkshopMember()
     await client.sql`COMMIT`;
 
-    return Response.json({ message: 'Database created successfully' });
+    return Response.json({ message: 'Database seeded successfully' });
   } catch (error) {
     await client.sql`ROLLBACK`;
     return Response.json({ error }, { status: 500 });
-  }
+  }*/
 }
