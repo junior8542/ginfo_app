@@ -29,13 +29,16 @@ const Navbar: React.FC = () => {
             <Link href="/">Accueil</Link>
           </li>
           <li className={`${isActive('/events') ? 'text-white' : 'text-dimWhite'} hover:text-white text-[18px] font-medium cursor-pointer`}>
-            <Link href="/events">Événements</Link>
+            <Link href="/events">Projets</Link>
           </li>
           <li className={`${isActive('/projects') ? 'text-white' : 'text-dimWhite'} hover:text-white text-[18px] font-medium cursor-pointer`}>
-            <Link href="/projects">Projets</Link>
+            <Link href="/projects">Événements</Link>
           </li>
           <li className={`${isActive('/profile') ? 'text-white' : 'text-dimWhite'} hover:text-white text-[18px] font-medium cursor-pointer`}>
-            <Link href="/profile">Profil</Link>
+            <Link href="/ClubInfo">club informatique</Link>
+          </li>
+          <li className={`${isActive('/profile') ? 'text-white' : 'text-dimWhite'} hover:text-white text-[18px] font-medium cursor-pointer`}>
+            <Link href="/utilisateur">Utilisateur</Link>
           </li>
         </ul>
 
