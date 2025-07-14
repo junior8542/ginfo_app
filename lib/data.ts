@@ -2,7 +2,6 @@ import { sql } from '@vercel/postgres';
 import {
   Evenement
 } from './definitions';
-import { formatCurrency } from './utils';
 import bcrypt from 'bcrypt';
 
 export async function addUser(){

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Updated_evenement } from "@/lib/definitions";
-import { Business } from "@/components";
+import { Events } from "@/components/ui";
 
 export default function EventsPage() {
   const [events, setEvents] = useState<Updated_evenement[]>([]);
@@ -32,7 +32,7 @@ export default function EventsPage() {
     <div className="min-h-screen bg-primary">
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-white mb-8">Événements</h1>
-        <Business events_arr={events} />
+        <Events events_arr={events} />
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import styles from "@/styles/style";
-import { Hero, Business, Stats, Billing, CardDeal, Testimonials, Clients, CTA } from "@/components";
+import { Hero, Events, Stats, Billing, CardDeal, Testimonials, Clients, CTA } from "@/components/ui";
 import { Updated_evenement } from "@/lib/definitions";
 
 // Fonction pour simuler la récupération des événements
@@ -89,7 +89,7 @@ export default function Page() {
         </div>
         <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
           <div className={`${styles.boxWidth}`}>
-            <Business events_arr={events}/>
+            <Events events_arr={events}/>
             <Stats />
             <Billing />
             <CardDeal />

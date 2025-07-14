@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import styles from "@/styles/style";
-import { Navbar, Footer } from "@/components";
+import { Navbar, Footer, NavMenu} from "@/components/ui";
 
 export const metadata = {
   title: "GINFO - ENSET Douala",

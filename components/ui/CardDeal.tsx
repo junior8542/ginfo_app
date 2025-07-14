@@ -13,7 +13,7 @@ const CardDeal: React.FC = () => (
         Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
         aliquet eget mauris tortor.c Aliquet ultrices ac, ametau.
       </p>
-      <Button styles="mt-10" />
+      
     </div>
     <div className={layout.sectionImg}>
       <Image src={card} alt="card" className="w-[100%] h-[100%]" />

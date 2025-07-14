@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { close, logo, menu } from "@/public/assets";
 import { navLinks } from "@/constants";
 import Image from 'next/image';
-import Logo from '@/components/ginfo-logo'
+import Logo from '@/custom_components/ginfo-logo'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

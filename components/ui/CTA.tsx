@@ -11,7 +11,7 @@ const CTA: React.FC = () => (
             </p>
         </div>
         <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>
-            <Button />
+            
         </div>
     </section>
 )

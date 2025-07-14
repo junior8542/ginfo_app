@@ -1,5 +1,5 @@
 import styles, { layout } from "@/styles/style";
-import Button from "./Button";
+import Button from "../Button";
 import Image from "next/image";
 import { EventCardProps } from "@/types";
 import {star} from "@/public/assets"
