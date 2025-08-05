@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import styles from "@/styles/style";
 import { Hero, Events, Stats, Billing, CardDeal, Testimonials, Clients, CTA } from "@/components/ui";
 import { Updated_evenement } from "@/lib/definitions";
+import { Skeleton } from "@/components/ui/skeleton";
 
 // Fonction pour simuler la récupération des événements
 const fetchEvent = async (): Promise<Updated_evenement[]> => {
@@ -84,11 +85,13 @@ export default function Page() {
       <div className="bg-primary w-full overflow-hidden">
         <div className={`bg-primary ${styles.flexStart}`}>
           <div className={`${styles.boxWidth}`}>
+            <Skeleton className="h-full w-full rounded-lg" />
             <Hero />
           </div>
         </div>
         <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
           <div className={`${styles.boxWidth}`}>
+            
             <Events events_arr={events}/>
             <Stats />
             <Billing />

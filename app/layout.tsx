@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import styles from "@/styles/style";
-import { Navbar, Footer, NavMenu} from "@/components/ui";
+import { Navbar2, Footer, NavMenu} from "@/components/ui";
 
 export const metadata = {
   title: "GINFO - ENSET Douala",
@@ -12,7 +12,7 @@ const RootLayout = ({ children }: { children: React.ReactNode; }) => {
     <html lang="fr">
       <body>
         <div className="min-h-screen bg-primary">
-          <Navbar />
+          <Navbar2 />
           <main className="pt-20">
             {children}
           </main>

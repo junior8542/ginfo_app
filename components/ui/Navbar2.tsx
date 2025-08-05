@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Logo from '@/components/ui/ginfo-logo'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import  NavMenu  from "./NavMenu";
 
 const Navbar: React.FC = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,23 +25,7 @@ const Navbar: React.FC = () => {
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
-          <li className={`${isActive('/') ? 'text-white' : 'text-dimWhite'} hover:text-white text-[18px] font-medium cursor-pointer`}>
-            <Link href="/">Accueil</Link>
-          </li>
-          <li className={`${isActive('/events') ? 'text-white' : 'text-dimWhite'} hover:text-white text-[18px] font-medium cursor-pointer`}>
-            <Link href="/events">Projets</Link>
-          </li>
-          <li className={`${isActive('/projects') ? 'text-white' : 'text-dimWhite'} hover:text-white text-[18px] font-medium cursor-pointer`}>
-            <Link href="/projects">Événements</Link>
-          </li>
-          <li className={`${isActive('/profile') ? 'text-white' : 'text-dimWhite'} hover:text-white text-[18px] font-medium cursor-pointer`}>
-            <Link href="/ClubInfo">club informatique</Link>
-          </li>
-          <li className={`${isActive('/profile') ? 'text-white' : 'text-dimWhite'} hover:text-white text-[18px] font-medium cursor-pointer`}>
-            <Link href="/utilisateur">Utilisateur</Link>
-          </li>
-        </ul>
+        <NavMenu/>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <Image
